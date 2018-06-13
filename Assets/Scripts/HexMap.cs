@@ -364,7 +364,7 @@ public class HexMap : MonoBehaviour, IQPathWorld {
         {
             for (int dy = Mathf.Max(-range+1, -dx-range); dy < Mathf.Min(range, -dx+range-1); dy++)
             {
-                results.Add( GetHexAt(centerHex.Q + dx, centerHex.R + dy) );
+                results.Add( GetHexAt(centerHex.Q + 1 + dx, centerHex.R + dy) );
             }
         }
 
